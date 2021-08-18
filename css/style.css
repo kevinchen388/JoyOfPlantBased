@@ -59,6 +59,7 @@ li{
 
 img{
     width: 100%;
+    border-radius: 6px;
 }
 
 i{
@@ -76,13 +77,13 @@ button {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    transition: background-color .5s, transform .5s, box-shadow .5s;
+    transition: background-color .5s, transform .25s, box-shadow .25s;
 }
 
 button:hover {
     background-color: #194A40;
     cursor: pointer;
-    box-shadow: 0 2px 0.5em rgba(0, 0, 0, 0.4);;
+    box-shadow: 0 2px 0.5em rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
 }
 
@@ -141,6 +142,7 @@ nav li a{
     display: inline-block;
     width: auto;
     margin: 0 auto;
+    transition: background-color .5s, transform .25s;
 }
 
 nav .currentpage{
@@ -148,8 +150,9 @@ nav .currentpage{
     font-weight: 700;
 }
 
-nav a:hover{
+nav li a:hover{
     color: #4D7752;
+    transform: translateY(-2px);
 }
 
 
@@ -168,11 +171,12 @@ footer a{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5em;
-
+    transition: background-color .5s, transform .25s;
 }
 
 footer a:hover{
-    color: #FFFFFF;
+    color: #DFEEDA;
+    transform: translateY(-2px);
 }
 
 footer h2{
@@ -215,11 +219,11 @@ footer p{
 .grid{
     text-align: center;
     vertical-align: middle;
-    padding: 3% 10% 3% 10%;
+    padding: 3% 10% 0% 10%;
 }
 
 .picture_text{
-    margin: 0px 24px 52px 24px;
+    margin: 0px 24px 48px 24px;
     text-align: center;
 }
 
@@ -258,13 +262,26 @@ footer p{
     padding: 5% 0%;
 }
 
-.text_box{
+.link_box{
     margin: 0px 24px 36px 24px;
+    display: block;
+    text-decoration: none
+}
+
+.text_box{    
     text-align: center;
     border: 1px;
     border-style: solid;
     border-color: #4D7752;
+    border-radius: 6px;
     padding: 20px 16px;
+    transition: border-color .5s, transform .25s, box-shadow .25s;
+}
+
+.text_box:hover{    
+    border-color: #194A40;
+    box-shadow: 0 2px 0.5em rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 .title{
@@ -280,6 +297,17 @@ footer p{
     padding: 5% 0%;
 }
 
+.image_text_section{
+    text-align: center;
+    vertical-align: middle;
+    padding: 3% 10% 3% 10%;
+    margin: 0px 24px 52px 24px;
+}
+
+.image_text_section img{
+    margin-bottom: 12px;
+}
+
 .recipe_info{
     margin-bottom: 8px;
 }
@@ -288,11 +316,20 @@ footer p{
     grid-column: 1/-1;
     grid-row: 7/8;
     padding: 5% 0%;
+    text-align: center;
 }
 
 .portrait {
     border-radius: 200px;
     width: 33%;
+}
+
+.person_name {
+    margin-top: 8px;
+}
+
+#button_share{
+    margin-bottom: 10%;
 }
 
 .newsletter{
@@ -544,7 +581,8 @@ input[type=submit] {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     transition: background-color .5s, transform .5s, box-shadow .5s;
-    width: 100px;
+    width: 120px;
+    margin-top: 4px;
 }
 
 input[type=submit]:hover {
@@ -567,7 +605,7 @@ input[type=submit]:hover {
 
     h1{
         font-size: 3.5em;
-        margin: 20px 0px;
+        margin: 0px 0px 20px 0px;
     }
 
     h2{
@@ -592,7 +630,7 @@ input[type=submit]:hover {
     }
 
     img{
-        width: 50%;
+        width: 100%;
     }
 
     i{
@@ -614,7 +652,8 @@ input[type=submit]:hover {
     /*Navigation*/
     nav{
         padding: 20px;
-        display: flex;
+        display: flex;        
+        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);;
     }
     
     nav ul{
@@ -635,6 +674,113 @@ input[type=submit]:hover {
         padding-left: 2em;
     }
     
+    
+    /*Footer*/
+    footer{
+        padding: 3% 3%;
+    }
+    
+    
+    /*Home Page*/
+    .hero{
+        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);
+    }
+    
+    .hero_title{
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-column-gap: 32px;
+        align-items: center;
+    }
+    
+    .left{
+        width: 100%;
+        grid-column: 1/2;
+    }
+    
+    .right{
+        grid-column: 2/3;
+        text-align: left;
+    }
+    
+    .why_vegetarian{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        padding: 3% 0%;
+    }
+
+    .title_text{
+        padding: 3% 10% 3% 10%;
+    }
+
+    .grid{
+        padding: 2% 10% 2% 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+    }
+
+    .picture_text{
+        margin: 0px 18px 24px 18px;
+        text-align: left;
+    }
+
+    .quote_buddha{
+        padding: 1% 0%;
+    }
+
+    .quote{
+        padding: 3% 10% 3% 10%;
+    }
+
+    .support_efforts{
+        padding: 3% 0%;
+    }
+    
+    .link_box{
+        margin: 0px 18px 24px 18px;
+        display:inherit;
+    }
+
+    .title{
+        padding: 3% 10% 0% 10%;
+    }
+
+    .featured_recipe{
+        padding: 3% 0%;
+    }
+
+    .image_text_section{
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-column-gap: 32px;
+        align-items: center;
+    }
+    
+    .recipe_info{
+        margin-bottom: 12px;
+    }
+
+    .testimonials{
+        padding: 3% 0%;
+    }
+
+    .portrait {
+        width: 45%;
+    }
+    
+    .person_name {
+        margin-top: 12px;
+    }
+    
+    #button_share{
+        margin-bottom: 3%;
+    }
+    
+    .newsletter{
+        padding: 3% 0%;
+    }
+
 
 }  /*End the media query*/
 
