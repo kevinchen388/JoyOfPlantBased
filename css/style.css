@@ -88,11 +88,13 @@ button:hover {
 }
 
 /*Grid Container*/
+/*
 .container{
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
 }
+*/
 
 
 /*Navigation*/
@@ -596,7 +598,7 @@ input[type=submit]:hover {
 
 
 /*TABLET SCREEN*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 834px) {
     
     /*Global Styles*/
     body{
@@ -644,9 +646,11 @@ input[type=submit]:hover {
 
     
     /*Grid Container*/
+/*
     .container{
         grid-template-columns: 15% 70% 15%;
     }
+*/
 
     
     /*Navigation*/
@@ -691,6 +695,9 @@ input[type=submit]:hover {
         grid-template-columns: 4fr 3fr;
         grid-column-gap: 32px;
         align-items: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 0% 10% 0% 10%;
     }
     
     .left{
@@ -724,6 +731,7 @@ input[type=submit]:hover {
         margin: 0px 18px 24px 18px;
         text-align: left;
     }
+    
 
     .quote_buddha{
         padding: 1% 0%;
@@ -739,7 +747,11 @@ input[type=submit]:hover {
     
     .link_box{
         margin: 0px 18px 24px 18px;
-        display:inherit;
+        display: inherit;
+    }
+    
+    .text_box{
+        text-align: left;
     }
 
     .title{
@@ -755,6 +767,9 @@ input[type=submit]:hover {
         grid-template-columns: 4fr 3fr;
         grid-column-gap: 32px;
         align-items: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 0% 10% 0% 10%;
     }
     
     .recipe_info{
@@ -792,24 +807,142 @@ input[type=submit]:hover {
 @media screen and (min-width: 1200px) {
 
     /*Global Styles*/
-    h2{
-        
+    body{
+        font-size: 18px;
     }
-    
-    nav a{
-       
-    }
-nav #logo{
-    display: flex;
-    width: 200px;
-    margin: 0 auto;
-}
 
-nav #logo img{
-    width: 200px;
-    border-radius: 200px;
-}
+    h1{
+        font-size: 4.25em;
+        margin: 0px 0px 20px 0px;
+    }
+
+    h2{
+        font-size: 2.75em;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+
+    h4{
+        font-size: 1.5em;
+        line-height: 1.3em;
+    }
+
+    p{
+    }
+
+    li{
+    }
+
+    img{
+        width: 100%;
+    }
+
+    i{
+    }
+
     
+    /*Grid Container*/
+/*
+    .container{
+        grid-template-columns: 15% 70% 15%;
+    }
+*/
+
+    
+    /*Navigation*/
+    nav ul{
+        margin-right: 8%;
+    }
+
+    nav #logo{
+        margin-left: 8%;
+    }
+    
+    
+    /*Footer*/
+    footer{
+        padding: 2% 2%;
+    }
+    
+    
+    /*Home Page*/
+    .hero{
+        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);
+    }
+    
+    .hero_title{
+        grid-template-columns: 5fr 3fr;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 0% 15% 0% 15%;
+    }
+    
+    .why_vegetarian{
+        padding: 2% 0%;
+    }
+
+    .title_text{
+        padding: 2% 15% 2% 15%;
+    }
+
+    .grid{
+        padding: 1% 15% 1% 15%;
+    }
+    
+    .quote_buddha{
+        padding: 1% 0%;
+    }
+
+    .quote{
+        padding: 2% 15% 2% 15%;
+    }
+
+    .support_efforts{
+        padding: 2% 0%;
+    }
+    
+    .link_box{
+        margin: 0px 18px 24px 18px;
+    }
+    
+    .title{
+        padding: 2% 15% 0% 15%;
+    }
+
+    .featured_recipe{
+        padding: 2% 0%;
+    }
+
+    .image_text_section{
+        grid-template-columns: 5fr 3fr;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: 0% 15% 0% 15%;
+    }
+
+    .testimonials{
+        padding: 2% 0%;
+    }
+
+    .portrait {
+        width: 40%;
+    }
+    
+    #button_share{
+        margin-bottom: 2%;
+    }
+    
+    .newsletter{
+        padding: 2% 0%;
+    }
     
 
 } /*End the media query*/
