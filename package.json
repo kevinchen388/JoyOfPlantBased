@@ -1,0 +1,22 @@
+{
+  "name": "joyofplantbased",
+  "version": "1.0.0",
+  "description": "Welcome to a compassionate, earth friendly, plant based community. Created in the Summer of 2021 by Zhong Shu Temple USA.\r ## Website Additions\r Website additions and requests are welcome!\r Recipe Additions: http://joyofplantbased.org/\r General Requests: http://joyofplantbased.org/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinchen388/JoyOfPlantBased.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinchen388/JoyOfPlantBased/issues"
+  },
+  "homepage": "https://github.com/kevinchen388/JoyOfPlantBased#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
