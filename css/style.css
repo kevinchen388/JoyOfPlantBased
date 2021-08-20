@@ -388,12 +388,12 @@ input[type=submit] {
     border: none;
     border-radius: 6px;
     color: #FFFFFF;
-    padding: 10px 20px;
+    padding: 10px 22px;
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     transition: background-color .5s, transform .5s, box-shadow .5s;
-    width: 120px;
+    width: auto;
     margin-top: 4px;
 }
 

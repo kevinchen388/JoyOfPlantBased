@@ -9,20 +9,24 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151911865-5"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-151911865-5');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-151911865-5');
         </script>
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="app.js" defer></script>
+        
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/52e8749e9d.js" crossorigin="anonymous"></script>
@@ -32,41 +36,45 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     </head>
 
+    
     <body> <main>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <div class="container">
 
             <nav>
-                <a id="logo" href="index.html"><img src="images/home/logo.png" alt="Revolution logo"/></a>
+                <a id="logo" href="#"><img src="images/home/logo.gif" alt="Logo"/></a>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="media.html">MEDIA</a></li>
-                    <li><a href="members.html">MEMBERS</a></li>
-                    <li><a href="contact.html" class = "currentpage">CONTACT</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="contact.html" class = "currentpage">Contact</a></li>
                 </ul>
             </nav>
 
-            <div class="contact-image">
-                <div class="title">
-                    <h1>CONTACT</h1>
+
+            <div class="why_vegetarian">
+                <div class="title_text">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo in vitae turpis massa sed elementum. Vulputate enim nulla aliquet porttitor.</p>
+                </div>
+                <div class="grid">
+                    <div class="picture_text">
+                        <img class="photo" src="images/home/health2.jpg" alt="Person jogging"/>
+                        <h3>For Your Health</h3>
+                        <p>We have the ability to choose what foods we eat, so when we choose our food we are choosing what level of health we want for ourselves and our family. Consequetly because we do not live in the world alone, we are also choosing the level of health for the planet and our fellow citizens.  What level of health and vitaltiy do you wish to choose?</p>
+                    </div>
+                    <div class="picture_text">
+                        <img class="photo" src="images/home/environment.jpg" alt="Prairie and wind turbines"/>
+                        <h3>For the Planet</h3>
+                        <p>What we choose to eat everyday has a big impact on the environment. Even small changes in what we buy and eat can make a large impact in reducing global warming and preserving our resources.</p>
+                    </div>
+                    <div class="picture_text">
+                        <img class="photo" src="images/home/pigs.jpg" alt="Cows feeding on grass"/>
+                        <h3>For all Sentient Beings</h3>
+                        <p>Sentient Beings are all beings that have feelings and emotions. The choices we make with our lifestyle can bring suffering to our selves and other beings. Choosing a compationate lifestyle we learn to feel the pain of others as our own, and reduce the suffering. </p>
+                    </div>
                 </div>
             </div>
-
-
-
-            <div class = "title-social"  id = "main">
-                <h2>SOCIAL MEDIA</h2>
-                <p>Join the Revolution. </p>
-            </div>
-
-            <div class="social">
-                <a href="https://www.facebook.com/revolutionyoyo/" class="fab fa-facebook-square fa-2x" aria-hidden="false" aria-label="Facebook link"> <p> @revolutionyoyo </p> </a>
-                <a href="https://www.instagram.com/revolutionyoyo/"  class="fab fa-instagram fa-2x" aria-hidden="false" aria-label="Instagram link"> <p>@revolutionyoyo</p> </a>
-                <a href="https://www.youtube.com/user/diabolorevolution" class="fab fa-youtube fa-2x" aria-hidden="false" aria-label="Youtube link"> <p> @diabolorevolution </p> </a>
-            </div>
-
-
-
+            
+            
             <div class = "title-contact">
                 <h2>CONTACT US</h2>
                 <p>Feel free to contact us with any performance inquiries or questions! </p>
@@ -92,19 +100,58 @@
                     </fieldset>
                 </form>
             </div>
+            
+            <div class="featured_recipe">
+                <div class="title">
+                    <h2>Featured Recipe</h2>
+                </div>
+                <div class="image_text_section">
+                    <img class="left" src="images/home/noodle.jpg" alt="Shepherd's Pie"/>
+                    <div class="right"> 
+                        <h3>Vegetable Pad Thai</h3>
+                        <p class="recipe_info"><i class="fas fa-carrot"></i>Vegetarian&ensp;
+                            <i class="fas fa-clock"></i>30 minutes
+                        </p>
+<!--                        <p><i class="fas fa-leaf"></i>Vegan</p>-->
+                        <p>Pad thai is a stir-fried rice noodle dish commonly served as a street food and at most restaurants in Thailand as part of the country's cuisine. It is typically made with rice noodles, tofu, peanuts, a scrambled egg, and bean sprouts, among other vegetables.</p>
+                    </div>
+                    
+                </div>
+            </div>
+    
+            
+            <div class="newsletter">
+                <div class="title_text">
+                    <h2>Newsletter</h2>
+                    <p>Sign up for our monthly newsletters with events and recipes delivered straight to your email!</p>
+                </div>
+                <div class="image_text_section">
+                    <img class="left" src="images/home/mailbox.jpg" alt="Mailbox"/>
+                    <div class="contactform right">
+                        <form name="contact-form" action="https://formspree.io/f/mbjqpzzn" method="POST">
+                            <fieldset>
+                                <input type="text" name="Name" id = "name" placeholder="Name" aria-label="Name" required><br/>
+                                <input type="email" name="Email" id = "email" placeholder="Email Address" aria-label="Email Address" required><br/>
+                                <div class = "buttoncontainer">
+                                    <input type = "submit" id = "button" value = "Sign Up">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
 
             <footer>
-                <a href="https://www.facebook.com/revolutionyoyo/" class="fab fa-facebook-square" aria-label="Facebook link" aria-hidden="false"></a>
-                <a href="https://www.instagram.com/revolutionyoyo/" class="fab fa-instagram" aria-label="Instagram link" aria-hidden="false"></a>
-                <a href="https://www.youtube.com/user/diabolorevolution" class="fab fa-youtube" aria-label="Youtube link" aria-hidden="false"></a>
-                <p>Revolution Chinese Yoyo <br>
-                Ann Arbor, Michigan | revolutioncore@umich.edu <br>
-                &copy; Revolution 2020</p>
+                <a href="https://www.facebook.com/zhongshutemplemi" target="_blank" rel="noopener noreferrer" class="fab fa-facebook-square" aria-label="Facebook link" aria-hidden="false"></a>
+                <a href="https://www.youtube.com/channel/UCxiS2rZk5nZySZBvKgE1_7A" target="_blank" rel="noopener noreferrer" class="fab fa-youtube" aria-label="Youtube link" aria-hidden="false"></a>
+                <h2>Joy of Plant Based</h2>
+                <p>Created by Zhong Shu Temple USA <br>
+                &copy; Copyright 2021</p>
             </footer>
-
+            
         </div>
-
     </main> </body>
 
+    
 </html>
