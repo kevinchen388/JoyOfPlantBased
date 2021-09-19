@@ -133,8 +133,7 @@ nav #logo{
 }
 
 nav #logo img{
-    width: 80px;
-    border-radius: 200px;
+    width: 90px;
 }
 
 nav ul{
@@ -342,6 +341,7 @@ footer p{
 
 .person_name {
     margin-top: 8px;
+/*    color: #4D7752;*/
 }
 
 .newsletter{
