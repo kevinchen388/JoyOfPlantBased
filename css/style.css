@@ -384,6 +384,7 @@ footer p{
 .portrait {
     border-radius: 200px;
     width: 33%;
+    pointer-events: none;
 }
 
 .person_name {
