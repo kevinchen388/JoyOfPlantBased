@@ -68,6 +68,11 @@ li{
 a{
     text-decoration: none;
     color: #4D7752;
+    transition: color .25s;
+}
+
+a:hover{
+    color: #194A40;
 }
 
 a h3{
@@ -575,6 +580,20 @@ input[type=submit]:hover {
 }
 
 
+/*Challenge*/
+.challenge{
+    padding: 5% 0% 5% 0%;
+}
+
+.h3_text{
+    padding: 0% 10% 15% 10%;
+}
+
+.h3_text li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+
 /*------------------------------------*/
 
 
@@ -735,6 +754,11 @@ input[type=submit]:hover {
         padding: 0% 0% 5% 0%;
     }
     
+    .image_text_section img{
+        max-width: 400px;
+        justify-self: end;
+    }
+    
     .video{
         width: 90%;
         height: 450px;
@@ -832,6 +856,16 @@ input[type=submit]:hover {
     
     .contact_us{
         padding: 5% 0% 3% 0%;
+    }
+
+    
+    /*Challenge*/
+    .challenge{
+        padding: 5% 0% 3% 0%;
+    }
+
+    .h3_text{
+        padding: 0% 10% 8% 10%;
     }
 
 
@@ -962,6 +996,10 @@ input[type=submit]:hover {
         margin: 0% 15% 0% 15%;
     }
     
+    .image_text_section img{
+        max-width: 500px;
+    }
+    
     .video{
         width: 75%;
         height: 450px;
@@ -1029,6 +1067,18 @@ input[type=submit]:hover {
     .contact_us{
         padding: 5% 0% 4% 0%;
     }
+    
+    
+    /*Challenge*/
+    .challenge{
+        padding: 5% 0% 2% 0%;
+    }
+
+    .h3_text{
+        padding: 0% 10% 5% 10%;
+    }
+
+    
 
 } /*End the media query*/
 
