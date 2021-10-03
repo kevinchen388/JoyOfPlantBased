@@ -402,6 +402,7 @@ footer p{
     width: 100%;
     height: 350px;
     border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 .recipe_info{
