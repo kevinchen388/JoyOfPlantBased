@@ -155,6 +155,13 @@ button:hover {
 
 .fa-chevron-left{
     color: #5E5E5E;
+    transition: transform .25s;
+}
+
+.fa-chevron-left:hover {
+    color: #222222;
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 /*Grid Container*/
@@ -184,6 +191,12 @@ nav #logo{
     display: flex;
     width: 80px;
     margin: 0 auto;
+    transition: transform .25s;
+}
+
+nav #logo:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 nav #logo img{
