@@ -53,6 +53,14 @@ p{
     line-height: 1.5em;
 }
 
+ul{
+    list-style-position: inside;
+}
+
+ol{
+    list-style-position: inside;
+}
+
 li{
     color: #222222;
 }
@@ -117,8 +125,12 @@ button:hover {
     color: #EDA04B;
 }
 
-.fa-leaf{
+.fa-seedling{
     color: #4D7752;
+}
+
+.fa-ban{
+    color: #ED7F5C;
 }
 
 .fa-clock{
@@ -135,6 +147,14 @@ button:hover {
 
 .fa-star{
     color: #ED7F5C;
+}
+
+.fa-user{
+    color: #5E5E5E;
+}
+
+.fa-chevron-left{
+    color: #5E5E5E;
 }
 
 /*Grid Container*/
@@ -372,6 +392,7 @@ footer p{
 
 .recipe_info{
     margin-bottom: 16px;
+    line-height: 1.75;
 }
 
 .testimonials{
@@ -465,7 +486,7 @@ input[type=submit]:hover {
 
 
 /*Recipes*/
-#recipe_page{
+#recipes_page{
     background-color: transparent;
 }
 
@@ -473,6 +494,42 @@ input[type=submit]:hover {
     grid-column: 1/-1;
     grid-row: 3/4;
     padding: 5% 0% 7% 0%;
+}
+
+
+/*Recipe Page*/
+#recipe_page{
+    background-color: transparent;
+    padding-bottom: 2%;
+}
+
+.fa-chevron-left{
+    position: absolute;
+    left: 10%;
+    margin-top: -24px;
+    font-size: 24px;
+}
+
+.recipe_text{
+    vertical-align: middle;
+    padding: 5% 10% 5% 10%;
+}
+
+.recipe_text li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.recipe_images{
+    display: flex;
+    padding: 8% 10% 17% 10%;
+    flex-flow: row wrap;
+}
+
+.recipe_images .photo{
+    margin: 8px;
+    flex: auto;
+    align-self: center;
+    width: 200px;
 }
 
 
@@ -688,6 +745,39 @@ input[type=submit]:hover {
         padding: 5% 0% 5% 0%;
     }
 
+    
+    /*Recipe Page*/
+    #recipe_page{
+        padding-bottom: 2%;
+    }
+
+    .fa-chevron-left{
+        left: 9%;
+        margin-top: -20px;
+        font-size: 26px;
+    }
+    
+    .recipe-video{
+        height: inherit;
+    }
+    
+    .recipe_text{
+        padding: 3% 10% 3% 10%;
+    }
+
+    .recipe_text li:not(:last-child){
+    }
+
+    .recipe_images{
+        display: flex;
+        padding: 4% 10% 8% 10%;
+        flex-flow: row wrap;
+    }
+
+    .recipe_images .photo{
+        width: 250px;
+    }
+    
     
     /*Contact Us Page*/
     .contact_section{
