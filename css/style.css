@@ -188,7 +188,6 @@ nav{
     padding: 1.5em 1em;
     justify-content: center;
     align-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
     z-index: 1;
 }
@@ -211,13 +210,15 @@ nav #logo img{
 
 nav ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: .5em;
+    gap: 8px 24px;
 }
 
 nav li{
-    padding-left: 1.5em;
+/*    padding-left: 1.5em;*/
 }
 
 nav li:first-child{
@@ -236,7 +237,7 @@ nav li a{
 }
 
 nav .currentpage{
-    color: #194A40;
+    color: #EDA04B;
     font-weight: 700;
 }
 
@@ -594,6 +595,40 @@ input[type=submit]:hover {
 }
 
 
+/*Resources*/
+.tabs{
+    margin-top: -8%;
+    padding: 0% 10% 15% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 8px;
+}
+
+.tabs input {
+    margin-bottom: inherit;
+}
+
+.image-large{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.image-med{
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 8px;
+}
+
+.image-small{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+
 /*------------------------------------*/
 
 
@@ -642,7 +677,7 @@ input[type=submit]:hover {
     nav{
         padding: 20px;
         display: flex;        
-        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);;
+        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);
     }
     
     nav ul{
@@ -660,7 +695,7 @@ input[type=submit]:hover {
     
     nav li{
         display: inline-block;
-        padding-left: 2em;
+        padding-left: 1em;
     }
     
     
@@ -867,6 +902,21 @@ input[type=submit]:hover {
     .h3_text{
         padding: 0% 10% 8% 10%;
     }
+    
+    
+    /*Resources*/
+    .tabs{
+        padding: 0% 10% 10% 10%;
+        gap: 4px 12px;
+    }
+    
+    .image-med{
+        width: 70%;
+    }
+
+    .image-small{
+        width: 50%;
+    }
 
 
 
@@ -918,12 +968,16 @@ input[type=submit]:hover {
 
     
     /*Navigation*/
+    nav{
+        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);
+    }
+    
     nav ul{
         margin-right: 8%;
     }
 
     nav #logo{
-        margin-left: 8%;
+        margin-left: 5%;
     }
     
     
@@ -1076,6 +1130,13 @@ input[type=submit]:hover {
 
     .h3_text{
         padding: 0% 10% 5% 10%;
+    }
+    
+    
+    /*Resources*/
+    .tabs{
+        margin-top: -3%;
+        padding: 0% 10% 7% 10%;
     }
 
     
