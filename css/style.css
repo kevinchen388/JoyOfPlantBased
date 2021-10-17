@@ -237,7 +237,7 @@ nav li a{
 }
 
 nav .currentpage{
-    color: #EDA04B;
+    color: #4D7752;
     font-weight: 700;
 }
 
@@ -676,7 +676,10 @@ input[type=submit]:hover {
     /*Navigation*/
     nav{
         padding: 20px;
-        display: flex;        
+        display: flex;
+    }
+    
+    nav#home{ 
         background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);
     }
     
@@ -970,7 +973,7 @@ input[type=submit]:hover {
     
     /*Navigation*/
     nav{
-        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);
+/*        background: linear-gradient(to right, #194A40 50%, #DFEEDA 50%);*/
     }
     
     nav ul{
