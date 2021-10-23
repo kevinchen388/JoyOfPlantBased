@@ -594,6 +594,10 @@ input[type=submit]:hover {
     margin-bottom: 8px;
 }
 
+#alliums {
+    margin: 24px auto;
+}
+
 
 /*Resources*/
 .tabs{
