@@ -93,15 +93,19 @@ h3 a:hover {
     color: #EDA04B;
 }
 
-img{
+img {
     width: 100%;
     border-radius: 6px;
 }
 
-i{
+i {
     color: #222222;
     margin: 0px 6px;
     font-size: 18px;
+}
+
+b {
+    font-weight: 600;
 }
 
 .italics {
@@ -602,6 +606,10 @@ input[type=submit]:hover {
     flex: auto;
     align-self: center;
     width: 200px;
+}
+
+.additional_info {
+    margin-top: 36px;
 }
 
 
